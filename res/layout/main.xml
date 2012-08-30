@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<FrameLayout android:layout_width="180px" android:layout_height="195px" android:id="@+id/mainFrame">
+</FrameLayout>
+	
+<Button android:layout_width="60px" android:id="@+id/enter" android:layout_marginTop="5px" android:layout_height="wrap_content"  android:background="@drawable/enter"  android:layout_below="@id/mainFrame" ></Button>
+<Button android:layout_width="60px" android:id="@+id/clear" android:layout_marginTop="5px" android:layout_height="wrap_content"  android:layout_below="@id/mainFrame" android:background="@drawable/clear"  android:layout_toRightOf="@id/enter"></Button>  
+<Button android:layout_width="60px" android:id="@+id/add" android:layout_marginTop="5px" android:layout_height="wrap_content" android:background="@drawable/add"  android:layout_toRightOf="@id/clear" android:layout_below="@id/mainFrame"></Button>
+  
+
+<TextView android:layout_marginTop="10px" android:layout_marginLeft="60px" android:layout_width="100px" android:id="@+id/inType" android:layout_height="wrap_content" android:text="Input Type" android:layout_below="@id/enter" />
+<!-- <RadioGroup android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" android:text="Caps"
+	android:id="@+id/capsRadio" android:layout_below="@id/inType">
+	<RadioButton android:checked="false"
+	android:id="@+id/capsOn" android:text="On"/>
+	<RadioButton android:checked="false"
+	android:id="@+id/capsOff" android:text="Off"/>
+</RadioGroup>
+
+<RadioGroup android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:id="@+id/symNum" android:layout_below="@id/capsRadio">
+	<RadioButton android:checked="false"
+	android:id="@+id/symOn" android:text="Symbol"/>
+	<RadioButton android:checked="false"
+	android:id="@+id/numOn" android:text="Digits"/>
+</RadioGroup> -->
+
+<Button  android:layout_width="40px" android:id="@+id/capsOn" android:layout_marginTop="10px" android:layout_height="40px" android:background="@drawable/upper3"  android:layout_below="@id/inType" ></Button>
+<Button  android:layout_marginLeft="5px" android:layout_width="45px" android:id="@+id/capsOff" android:layout_marginTop="10px" android:layout_height="45px" android:background="@drawable/lower2"  android:layout_below="@id/inType" android:layout_toRightOf="@id/capsOn"></Button>
+<Button  android:layout_marginLeft="5px" android:layout_width="40px" android:id="@+id/symOn" android:layout_marginTop="10px" android:layout_height="40px" android:background="@drawable/symbol2"  android:layout_below="@id/inType" android:layout_toRightOf="@id/capsOff"></Button>
+<Button  android:layout_width="45px" android:id="@+id/numOn" android:layout_marginTop="5px" android:layout_height="55px" android:background="@drawable/number2"  android:layout_below="@id/inType" android:layout_toRightOf="@id/symOn"></Button>
+
+<AutoCompleteTextView android:id="@+id/autocomplete_keywords"
+        android:layout_height="40px"
+        android:layout_width="120px" android:layout_toRightOf="@id/mainFrame" />
+        
+	
+<TextView android:id="@+id/console"
+        android:layout_height="40px"
+        android:layout_width="180px" android:layout_toRightOf="@id/autocomplete_keywords" android:layout_marginLeft="2px"/>
+        
+<Button android:layout_width="60px" android:id="@+id/clearFile" android:layout_height="40px" android:background="@drawable/clear2"   android:layout_toRightOf="@id/console" ></Button>
+<Button android:layout_width="60px" android:id="@+id/newLine" android:layout_height="40px"  android:background="@drawable/enter2"   android:layout_toRightOf="@id/clearFile"  ></Button>
+<Button android:layout_width="60px" android:id="@+id/semiColon" android:layout_height="40px"  android:background="@drawable/semi2" android:layout_toRightOf="@id/newLine" ></Button>
+   
+	
+<TextView android:layout_width="470px" android:textColor="#ffffff" android:background="#bebebe" android:layout_height="255px" android:layout_marginLeft="5px" android:id="@+id/prog" android:layout_below="@id/autocomplete_keywords" android:layout_toRightOf="@id/mainFrame"/>
+<Button android:layout_width="60px" android:id="@+id/newFile" android:layout_height="40px" android:layout_marginTop="5px" android:background="@drawable/new2"  android:layout_below="@id/prog" android:layout_toRightOf="@id/mainFrame" ></Button>  
+<Button android:layout_width="60px" android:id="@+id/saveFile" android:layout_height="40px" android:layout_marginTop="5px" android:background="@drawable/save3" android:layout_below="@id/prog" android:layout_toRightOf="@id/newFile" ></Button>
+<Button android:layout_width="60px" android:id="@+id/loadFile" android:layout_height="40px" android:layout_marginTop="5px" android:background="@drawable/upload"  android:layout_below="@id/prog" android:layout_toRightOf="@id/saveFile" ></Button>
+</RelativeLayout>
