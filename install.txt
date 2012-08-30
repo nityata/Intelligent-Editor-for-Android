@@ -1,0 +1,6 @@
+Load the files in src, res and the manifest file on eclipse etc. 
+
+Load "big.txt" and "small.txt" in a folder called "Downloads" of phone sd-card.
+
+Run the application on phone.
+
